@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.js" ></script>
+		<style type="text/css">
+			.thumbnail{
+				height: 500px;
+			}
+			.thumbnail h3{
+				 text-align: center;
+			}
+			.thumbnail p{
+				text-align: left;
+			}
+			.btn-primary{
+				margin-top:auto;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				$("#img").carousel({
+					interval:2000
+				})
+			})
+		</script>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="60" style="background-color: wheat;">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand btn-lg">食旅网</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="collapse" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-left">
+						<li><a href="#meishi">美食</a></li>
+						<li><a href="#lyou">旅游</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--轮播图-->
+		<div id="img" class="carousel slide">
+			<ul class="carousel-indicators">
+				<li data-target="#img" data-slide-to="0"></li>
+				<li data-target="#img" data-slide-to="1"></li>
+				<li data-target="#img" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/象鼻山.jpg" class="img-responsive" style="width: 100%;height: 600px;"/>
+				</div>
+				<div class="item">
+					<img src="img/黄果树瀑布.jpg" class="img-responsive" style="width: 100%;height: 600px;"/>
+				</div>
+				<div class="item">
+					<img src="img/漓江.jpg" class="img-responsive" style="width: 100%;height: 600px;"/>
+				</div>
+				<a href="#img" class="carousel-control left" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#img" class="carousel-control right" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		<div id="meishi" class="container" style=" background-color: mistyrose;">
+			<h2>美食</h2>
+			<div class="row  text-center" style="border-top:3px solid deepskyblue;margin-bottom: 20px;">
+				<div style="margin-top: 20px;">
+					<div class="col-md-4 col-sm-12">
+						<div class="thumbnail">
+							<img src="img/DFR.jpg" class="img-responsive" />
+							<h3>豆腐乳</h3>
+							<p><strong>介绍：</strong>腐乳又称豆腐乳，是中国流传数千年的特色传统民间美食，因其口感好、
+								营养高，闻起来有股臭，吃起来特别的香味深受中国老百姓及东南亚地区人民的喜爱，
+								是一道经久不衰的美味佳肴。</p>				
+						</div>					
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="thumbnail">
+							<img src="img/GLG.jpg" class="img-responsive"/>
+							<h3>龟苓膏</h3>
+							<p><strong>介绍：</strong>龟苓膏，滋阴润燥，降火除烦，清利湿热，凉血解毒。用于虚火烦燥，口舌生疮，
+								津亏便秘，热淋白浊，赤白带下，皮肤骚痒，疖肿疮疡。</p>					
+						</div>					
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="thumbnail">
+							<img src="img/MTG.jpg" class="img-responsive"/>
+							<h3>马蹄糕</h3>
+							<p><strong>介绍：</strong>马蹄糕是广东省广州市和福建省福州市广西壮族自治区南宁市的传统甜点小吃。
+								相传源于唐代，以糖水拌合荸荠粉或者地瓜粉蒸制而成。荸荠，粤语和闽语别称马蹄，故名。其色茶黄，
+								呈半透明，可折而不裂，撅而不断，软、滑、爽、韧兼备，味极香甜。</p>
+						</div>					
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/GLMF.jpg" class="img-responsive"/>
+						<h3>桂林米粉</h3>
+						<p><strong>介绍：</strong>桂林米粉是广西桂林地区历史悠久的特色传统名小吃。以其独特的风味远近闻名。
+							圆的称米粉，片状的称切粉，通称米粉，其特点是洁白、细嫩、软滑、
+							爽口。其吃法多样。制作最最讲究卤水的制作，其工艺各家有异，大致以猪、牛骨、罗汉果和各式佐料熬煮而成，
+							香味浓郁。卤水的用料和做法不同，米粉的风味也不同。</p>				
+					</div>					
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/LSF.jpg" class="img-responsive"/>
+						<h3>螺蛳粉</h3>
+						<p><strong>介绍：</strong>螺蛳粉是广西壮族自治区柳州市的小吃米粉，具有辣、爽、鲜、酸、烫的独特风味
+							是柳州最具地方特色的名小吃。螺蛳粉的味美还因为它有着独特的汤料。汤料由螺蛳、山奈、八角、肉桂、丁香、
+							多种辣椒、等天然香料和味素配制而成</p>
+					</div>					
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						
+					</div>					
+				</div>
+			</div>			
+		</div>
+		<div id="lyou" class="container"style="margin-top: 40px; background-color: lightskyblue;">
+			<h2>旅游</h2>
+			<div class="row"style="border-top:3px solid deepskyblue;margin-bottom: 20px;">
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/漓江.jpg" />
+						<h3>漓江</h3>
+						<p><strong>介绍：</strong>漓江，属珠江流域西江水系，为支流桂江上游河段的通称，
+							位于广西壮族自治区东北部。传统意义上的漓江起点为桂江源头越城岭猫儿山，
+							现代水文定义为兴安县溶江镇灵渠口，终点为平乐三江口。漓江上游河段为大溶江，
+							下游河段为传统名称的桂江。漓江段全长164公里。旅游资源丰富，著名的桂林山水就在漓江上</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/象鼻山.jpg" />
+						<h3 style="margin-top: 50px;">象鼻山</h3>
+						<p><strong>介绍：</strong>象鼻山原名漓山，位于广西区桂林市内桃花江与漓江汇流处，
+							山因酷似一只站在江边伸鼻豪饮漓江甘泉的巨象而得名，被人们称为桂林山水的象征。</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/黄果树瀑布.jpg" />
+						<h3 style="margin-top: 50px;">黄果树瀑布</h3>
+						<p><strong>介绍：</strong>黄果树瀑布，即黄果树大瀑布。是世界著名大瀑布之一。
+							以水势浩大著称。瀑布高度为77.8米，其中主瀑高67米；瀑布宽101米，其中主瀑顶宽83.3米。
+							黄果树瀑布属喀斯特地貌中的侵蚀裂典型瀑布。</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-12">
+					<div class="thumbnail">
+						<img src="img/龙脊梯田.jpg" />
+						<h3>龙脊梯田</h3>
+						<p><strong>介绍：</strong>龙脊梯田，是指在龙脊山上开发出的梯田，从广义说叫做龙胜梯田，从狭义上称为龙脊梯田。
+							位于广西龙胜各族自治县龙脊镇平安村龙脊山，距县城22公里。距桂林市80公里，
+							处东经109°32'～110°14'北纬25°35'～26°17'之间，龙脊梯田分为金坑（大寨）瑶族梯田观景区，
+							平安壮族梯田观景区。龙脊梯田，通常意义上的是指龙脊平安壮族梯田，也是开发较早的梯田，
+							分布在海拔300米至1100米之间，最大坡度达50度，前往梯田几乎都是盘山公路，一直升到约海拔600米以上，
+							到梯田时海拔达到880米。</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12"></div>
+				<div class="col-md-4 col-sm-12"></div>
+			</div>
+		</div>
+	</body>
+</html>
